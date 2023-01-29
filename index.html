@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <title>Document</title>
+</head>
+<script>
+  function enviar() {
+    let nota1 = parseInt(document.getElementById("n1").value);
+    let nota2 = parseInt(document.getElementById("n2").value);
+    let media = (nota1 + nota2) / 2
+
+    document.getElementById("media").innerHTML = media
+
+
+
+
+
+
+    if (media >= 7) {
+      resultado.innerHTML += `<p>Você passou, parabéns!</p>`
+
+    }
+    else if (media >= 5 && media <= 6) {
+      resultado.innerHTML += `<p>Você esta de recuperação, recuperar!</p>`
+    } else {
+      resultado.innerHTML += `<p>Parece que você não passou, estude mais um pouco!</p>`
+    };
+  }
+</script>
+
+
+</div>
+
+<body>
+  <div class="container">
+    <h1>Titulo do site</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(Página atual)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Imc.html">Imc</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sobre.html">Sobre</a>
+          </li>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container1">
+      <h4>Escreva sua nota e calcularemos sua media: </h4>
+      <form>
+
+        <div class="form-col">
+
+          <div class="col">
+            <h5>Nota 1</h5>
+            <input type="text"  class="form-control" id="n1">
+          </div>
+          <br>
+
+          <div class="col">
+            <h5>Nota 2</h5>
+            <input type="text" class="form-control" id="n2">
+          </div>
+        </div>
+      </form>
+
+      <button type="button" onclick="enviar()" class="btn btn-dark">calcular</button>
+    </div>
+
+    <div class="res">
+
+
+      Sua media é: <p id="media"></p>
+
+      <div id="resultado"></div>
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>
