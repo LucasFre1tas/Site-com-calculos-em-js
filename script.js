@@ -15,6 +15,30 @@
         }else{
             resultado.innerHTML += `<p>Parece que você não passou, estude mais um pouco!</p>`
      };
+
+
+
+     
     }
 
+    function calcular(){
+        let peso = parseFloat(document.getElementById("p").value);
+        let altura = parseFloat(document.getElementById("a").value);
+        let imc =(peso/(altura*altura))
+
+        document.getElementById("imc").innerHTML= imc
+
+
+
+        if (imc >= 18.5 && imc <= 25){
+            medida.innerHTML += `<p>Peso Ideal</p>`
+        } else if (imc >= 25 && imc < 30) {
+            medida.innerHTML +='<p>Acima do Peso</p>´'
+        } else if (imc > 30) {
+            medida.innerHTML += '<p>Obeso</p>'
+        } else {
+            medida.innerHTML +='<p>Abaixo de 18</p>'
+        }
+
+     }
 

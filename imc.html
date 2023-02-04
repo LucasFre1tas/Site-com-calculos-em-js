@@ -1,36 +1,89 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <title>Document</title>
 </head>
 
 
+</div>
+
 <body>
     <div class="container">
-    <h1>Titulo do site</h1>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home <span class="sr-only">(Página atual)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Imc1.html">Imc</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="sobre.html">Sobre</a>
-            </li>
-            </li>
-          </ul>
+        <h1>Titulo do site</h1>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(Página atual)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="imc.html">Imc</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre.html">Sobre</a>
+                    </li>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container1">
+            <h4>Escreva seu peso e sua altura e calcularemos seu imc </h4>
+            
+            <form>
+
+                <div class="form-col">
+
+                    <div class="col">
+                        <h5>Peso</h5>
+                        <input type="text" class="form-control" id="p">
+                    </div>
+                    <br>
+
+                    <div class="col">
+                        <h5>Altura</h5>
+                        <input type="text" class="form-control" id="a">
+                    </div>
+                </div>
+            </form>
+
+            <button type="button" onclick="calcular()" class="btn btn-dark">Medir</button>
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-header">
+                  Destaque
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Cras justo odio</li>
+                  <li class="list-group-item">Dapibus ac facilisis in</li>
+                  <li class="list-group-item">Vestibulum at eros</li>
+                </ul>
+                
+              </div>
         </div>
-      </nav>
-      <div class="container1">
+
+
+       
+          
+        <div class="res">
+
+
+            Seu IMC é: <p id="imc"></p>
+
+            <div id="medida"></div>
+        </div>
+
+        
+    </div>
+    </div>
 
 </body>
+
 </html>
