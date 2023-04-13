@@ -20,13 +20,23 @@
 
      
     }
+    
+    function aparecer(){
+        imagem = document.getElementById("imagem");
+        imagem.style.display = "block";
+     }
+     function aparecer1(){
+        imagem1 = document.getElementById("imagem1");
+        imagem.style.display = "block";
+        
+     }
 
     function calcular(){
         let peso = parseFloat(document.getElementById("p").value);
         let altura = parseFloat(document.getElementById("a").value);
         let imc =(peso/(altura*altura))
 
-        document.getElementById("imc").innerHTML= imc
+       
 
 
 

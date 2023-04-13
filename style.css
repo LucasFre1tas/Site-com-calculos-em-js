@@ -10,25 +10,49 @@ h4{
 form{
     padding-bottom: 20px;
     margin-bottom: 20px;
+    text-align: center;
 }
 .container{
-    margin-left: 20px;
+    max-height: 80%;
+    max-width: 80%;
    
 }
 .btn{
-    margin-left: 510px;
-    text-align: center;
+    max-height: 80%;
+    max-width: 80%;
+    margin-right:50%;
+    margin-left: 50%;
     margin-bottom: 10px;
+    
+    
+   
 }
 
-
-form{
-    margin-left: 200px;
-    margin-right: 200px;
-}
 .res{
     text-align: center;
 }
 li{
     color:white;
 }
+.card{
+    text-align: center;
+    margin-left: 50%;
+    margin-right: 50%;
+}
+
+#imagem{
+   display: none;
+   width: 200px;
+   height: 200px;
+   margin-left: 50%;
+   margin-right: 50%;
+   
+}
+#imagem1{
+    display: none;
+    width: 200px;
+    height: 200px;
+    margin-left: 50%;
+    margin-right: 50%;
+    
+ }
